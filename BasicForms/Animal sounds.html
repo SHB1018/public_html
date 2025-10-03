@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset "utf - 8">
+    <title>Animal Sounds Solution</title>
+</head>
+
+<body>
+    <audio id=""audiotag1" src="sounds/bear.wav" preload=""auto></audio>
+    <audio id=""audiotag1" src="sounds/bird.wav" preload=""auto></audio>
+    <audio id=""audiotag1" src="sounds/bison.wav" preload=""auto></audio>
+    <audio id=""audiotag1" src="sounds/cat.wav" preload=""auto></audio>
+    <audio id=""audiotag1" src="sounds/goat.wav" preload=""auto></audio>
+    
+    <h1>A JavaScript Client-Side Script</h1>
+
+    <p>Select an animal:</p>
+
+    <select id=""animalsounds">
+        <option value="bear">bear</option>
+        <option value="bird">bird</option>
+        <option value="bison">bison</option>
+        <option value="cat">cat</option>
+        <option value="goat">goat</option>
+    </select>
+
+    <button type="button" onclick=""myFunction()">Submit</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+    function myFunction() {
+        
+        var thesound, text;
+        
+        thesound = document.getElementById("animalsounds").value;
+
+        if (thesound == "bear") {
+
+            text = "<img src=images/bear.jpg>";
+
+            document.getElementById('audiotag1').play();
+
+
+
+    }
