@@ -1,22 +1,22 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset "utf - 8">
+    <meta charset="utf-8">
     <title>Animal Sounds Solution</title>
 </head>
 
 <body>
-    <audio id=""audiotag1" src="sounds/bear.wav" preload=""auto></audio>
-    <audio id=""audiotag1" src="sounds/bird.wav" preload=""auto></audio>
-    <audio id=""audiotag1" src="sounds/bison.wav" preload=""auto></audio>
-    <audio id=""audiotag1" src="sounds/cat.wav" preload=""auto></audio>
-    <audio id=""audiotag1" src="sounds/goat.wav" preload=""auto></audio>
+    <audio id="audiotag1" src="sounds/bear.wav" preload="auto"></audio>
+    <audio id="audiotag2" src="sounds/bird.wav" preload="auto"></audio>
+    <audio id="audiotag3" src="sounds/bison.wav" preload="auto"></audio>
+    <audio id="audiotag4" src="sounds/cat.wav" preload="auto"></audio>
+    <audio id="audiotag5" src="sounds/goat.wav" preload="auto"></audio>
     
     <h1>A JavaScript Client-Side Script</h1>
 
     <p>Select an animal:</p>
 
-    <select id=""animalsounds">
+    <select id="animalsounds" onchange="myFunction()">
         <option value="bear">bear</option>
         <option value="bird">bird</option>
         <option value="bison">bison</option>
@@ -24,7 +24,6 @@
         <option value="goat">goat</option>
     </select>
 
-    <button type="button" onclick=""myFunction()">Submit</button>
 
     <p id="demo"></p>
 
@@ -32,16 +31,32 @@
 
     function myFunction() {
         
-        var thesound, text;
-        
-        thesound = document.getElementById("animalsounds").value;
+        var thesound = document.getElementById("animalsounds").value;
+        var text= "";
 
         if (thesound == "bear") {
-
-            text = "<img src=images/bear.jpg>";
-
+            text = '<img src="images/bear.jpg">';
             document.getElementById('audiotag1').play();
+        } else if (thesound == "bird") {
+             text = '<img src="images/bird.jpg">';
+            document.getElementById('audiotag2').play();
+        } else if (thesound == "bison") {
+             text = '<img src="images/bison.jpg">';
+            document.getElementById('audiotag3').play();
+        } else if (thesound == "cat") {
+            text = '<img src="images/cat.jpg">';
+            document.getElementById('audiotag4').play();
+        } else if (thesound == "goat") {
+             text = '<img src="images/goat.jpg">';
+        document.getElementById('audiotag5').play();
 
+        }
 
+        document.getElementById("demo").innerHTML = text;
 
-    }
+    }  
+    
+    </script>
+
+</body>
+</html>
