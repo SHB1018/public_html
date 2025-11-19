@@ -1,0 +1,185 @@
+body, h1, h2, h3, p, nav, footer {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+}
+
+
+
+body {
+    background-color: #a0e0f0
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff0cc;
+    border: 2px solid #333;
+    padding: 20px;
+    box-shadow: 5px 5px 15px #888;
+}
+
+.header {
+    background-color: #f0e68c;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto; 
+}
+
+
+  
+.side-by-side-wrapper {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%
+}
+
+header h1 {
+    color: maroon;
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+
+.header h2 {
+    color: navy;
+    font-size: 1.5em;
+    margin-top: 5px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse; 
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid #555;
+    padding: 8px
+  }
+
+  th {
+    background-color: #28a745;
+    color: white;
+  }
+
+  .header-row {
+    background-color: #90ee09;
+    font-weight: bold;
+  }
+
+  .time-col {
+    background-color: #ddd
+  }
+
+  .block-label {
+    background-color: #444;
+    color: white;
+  }
+
+  .green-day {
+    background-color: #b9fbc0
+  }
+
+  .white-day {
+    background-color: #ffffff;
+  }
+
+  .flex {
+    background-color: #90ee90;
+  }
+
+  .inner-table td {
+    padding: 2px;
+    border: none;
+  }
+
+  .lunch-time {
+    background-color: #90ee90
+  }
+
+
+.logo {
+    width: 150px;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #4a0a0a;
+    padding: 10px 15px;
+    font-weight: bold;
+    
+}
+
+
+nav a:hover {
+    background-color: #fff;
+    color: maroon;
+}
+
+main {
+    text-align: left;
+}
+
+main h2 {
+    color: #222;
+    margin-bottom: 15px;
+}
+
+main p {
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+.center-image {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    border: 2px solid #333;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #333;
+}
+
+nav {
+
+    margin: auto;
+}
+
+.navigation-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.navigation-bar nav {
+    display:inline-block;
+}
+
+.navigation-bar a {
+    display:inline-block;
+    margin: 0 10px;
+}
