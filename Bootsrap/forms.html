@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="mystyle.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="top">
+        <div class="row">
+            <a href="index.html" class="col-md-12 header">
+                <header class="col-md-12 header">
+                    <img src="images/Untitled design.png" class="img-fluid d-block" style="width:100%; height:auto;"
+                        alt="">
+                </header>
+            </a>
+        </div><!-- end header row -->
+
+        <div class="row">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark col-md-12">
+
+                <!-- Toggler/Collapsible Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="threepage.html">Three Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms.html">Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pseudo.html">Pseudo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Animation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="zengarden.html">Zen Garden</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- end nav row -->
+
+        <div class="row">
+            <sidebar class="col-md-3 bg-sidenav">
+                <nav class="navbar">
+                </nav>
+            </sidebar>
+            <main class="col-md-9">
+                <h3>My Forms</h3>
+
+                <audio id="audiotag1" src="Sounds/bear.wav" preload="auto"></audio>
+                <audio id="audiotag2" src="Sounds/bird.wav" preload="auto"></audio>
+                <audio id="audiotag3" src="Sounds/bison.wav" preload="auto"></audio>
+                <audio id="audiotag4" src="Sounds/cat.wav" preload="auto"></audio>
+                <audio id="audiotag5" src="Sounds/goat.wav" preload="auto"></audio>
+
+                <h1>A JavaScript Client Side Script</h1>
+
+                <p>Select an animal:</p>
+
+                <select id="animalsounds">
+                    <option value="bear">Bear</option>
+                    <option value="bird">Bird</option>
+                    <option value="bison">Bison</option>
+                    <option value="cat">Cat</option>
+                    <option value="goat">Goat</option>
+                </select>
+
+                <button type="button" onclick="myFunction()">Submit</button>
+
+                <p id="demo"></p>
+
+                <script>
+
+                    function myFunction() {
+
+                        var thesound, text;
+
+                        thesound = document.getElementById("animalsounds").value;
+
+                        if (thesound == "bear") {
+
+                            text = "<img src=images/bear.jpg>";
+
+                            document.getElementById('audiotag1').play();
+                        } else if (thesound == "bird") {
+                            text = "<img src=images/bird.jpg>";
+                            document.getElementById('audiotag2').play();
+
+                        } else if (thesound == "bison") {
+                            text = "<img src=images/bison.jpg>";
+                            document.getElementById('audiotag3').play();
+
+                        } else if (thesound == "cat") {
+                            text = "<img src=images/cat.jpg>";
+                            document.getElementById('audiotag4').play();
+
+                        } else if (thesound == "goat") {
+                            text = "<img src=images/goat.jpg>";
+                            document.getElementById('audiotag5').play();
+                        }
+
+                        document.getElementById("demo").innerHTML = text;
+                    }
+
+
+                </script>
+
+                <br>
+                <br>
+                <br>
+
+                <h1>Contact Me:</h1>
+                <br>
+                <Form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="Type Name here..." tabindex="1"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Type Last Name here..." tabindex="2"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" value="example@email.com" tabindex="3"><br>
+                    <br>
+                    <br>
+                    <input type="radio" id="Freshmen" name="class" value="Freshmen">
+                    <label for="Freshmen" tabindex="4">Freshmen</label><br>
+                    <input type="radio" id="Sophmore" name="class" value="Sophmore">
+                    <label for="Sophmore" tabindex="5">Sophmore</label><br>
+                    <input type="radio" id="Junior" name="class" value="Junior">
+                    <label for="Junior" tabindex="6">Junior</label><br>
+                    <input type="radio" id="Senior" name="class" value="Senior">
+                    <label for="Senior" tabindex="7">Senior</label><br><br>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="like" name="like" value="like">
+                    <label for="like" tabindex="8"> I like something you like</label><br>
+                    <input type="checkbox" id="dislike" name="dislike" value="dislike">
+                    <label for="dislike" tabindex="9"> I dislike something you dislike</label><br>
+                    <br>
+                    <br>
+                    <textarea rows="30" cols="70" placeholder="Please leave a comment" tabindex="10"></textarea>
+
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit" tabindex="11">
+
+
+                </Form>
+
+            </main>
+        </div>
+
+        <div class="row bg-dark text-white">
+            <footer class="col-md-4 text-left">
+                &copy; 2025 prog II LLC.
+            </footer>
+
+            <footer class="col-md-4 text-center">
+                25 Alumni Drive <br>
+                Dover, NH 03820<br>
+                603.516.6900
+            </footer>
+
+            <footer class="col-md-4 text-right">
+                Developed by <a href="27shaneberube@sau11.org" target="_blank">Shane Berube</a>
+            </footer>
+        </div><!-- close footer row -->
+    </div><!-- end container-fluid -->
+
+</body>
+
+</html>
